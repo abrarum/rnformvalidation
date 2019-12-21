@@ -188,11 +188,19 @@ export default class App extends Component {
         }
     }
 
+    onLoginPress(){
+        console.log('do action')
+    }
+
     render() {
         
         return (
             <Container>
                 <Content padder style={{ marginTop: 30, marginBottom: 30 }}>
+                    <View style={{ justifyContent: 'center', position: 'absolute', top: 20, right: 0, alignItems: 'center', flexDirection: 'row', marginRight: 10 }}>
+                        <Text style={{ fontSize: 18, fontWeight: "700" }}>skip</Text>
+                        <Image style={{ marginTop: 5 }} source={require("./imgs/next.png")} />
+                    </View>
                     <View style={{ alignItems: 'center' }}>
                         <Text style={styles.headshot}>User Info</Text>
 
@@ -210,10 +218,26 @@ export default class App extends Component {
 
                             <View style={{
                                 /* Style for "Rectangle" */
+                                width: 45,
+                                height: 3,
+                                backgroundColor: '#0d3447'
+                            }}>
+                            </View>
+
+                            <View style={{
+                                /* Style for "Rectangle" */
                                 width: 14,
                                 height: 14,
                                 borderWidth: 1,
                                 borderColor: "#57dcdc"
+                            }}>
+                            </View>
+
+                            <View style={{
+                                /* Style for "Rectangle" */
+                                width: 45,
+                                height: 3,
+                                backgroundColor: '#57dcdc'
                             }}>
                             </View>
 
@@ -292,12 +316,12 @@ export default class App extends Component {
                         </View>
 
                         <View>
-                            <Text style={styles.foot1}>Already registered? <Text style={styles.foot2}>Login</Text></Text>
+                            <Text style={styles.foot1}>Already registered? <Text onPress={() => this.onLoginPress()} style={styles.foot2}>Login</Text></Text>
                         </View>
                     </View>
 
                 </Content>
-            </Container >
+            </Container>
 
         );
     }
