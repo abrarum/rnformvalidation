@@ -6,7 +6,7 @@ A one screen nice looking form built on react native custom validation rules.
 <br />
 <br />
 
-Validation rules for each field:
+<h3>Validation rules for each field:</h3>
 
 1. Full Name: No numbers and the field shouldn't be left empty.
 
@@ -16,7 +16,7 @@ Validation rules for each field:
 
 <br />
 
-Imp functions:
+<h3>Imp functions:</h3>
 
 1. onType(): A function that is a handler on the onChangeText method and is called everytime the input is changed. It handles the validation rules mentioned above.
 
