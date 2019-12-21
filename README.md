@@ -1,4 +1,4 @@
 # rnformvalidation
 A one screen nice looking form built on react native custom validation rules
 
-![screenshot of the react native form screen](./imgs/screen_screenshot.png =250x)
+<img src="./imgs/screen_screenshot.png" alt="screenshot of the react native form screen" width="200"/>
