@@ -169,8 +169,8 @@ export default class App extends Component {
             this.navigatorController(true)
             //this.setState({  });
         } else if (
-            this.state.name === "" ||
-            this.state.mob === "" ||
+            this.state.name === "" &&
+            this.state.mob === "" &&
             this.state.pass === ""
         ) {
             this.setState({ 
